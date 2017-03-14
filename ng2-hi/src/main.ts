@@ -7,4 +7,5 @@ if (environment.production) {
   enableProdMode();
 }
 
+// 动态引导
 platformBrowserDynamic().bootstrapModule(AppModule);
