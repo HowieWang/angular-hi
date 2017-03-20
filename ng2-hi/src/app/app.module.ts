@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './highlight.directive';
+import { LoggerService } from './logger.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { HighlightDirective } from './highlight.directive';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [LoggerService],
   bootstrap: [AppComponent]  // 应用的根组件
 })
 export class AppModule { }
