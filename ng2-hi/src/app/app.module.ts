@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './highlight.directive';
 import { LoggerService } from './logger.service';
+import { ChildComponent } from './child.component';
 
 @NgModule({
   declarations: [
     AppComponent,  // 引入工作组件
-    HighlightDirective
+    HighlightDirective,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

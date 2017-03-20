@@ -1,5 +1,10 @@
-<h1>
-  Hey！ {{greeting}}
-</h1>
-<label for=""><input type="checkbox" [(ngModel)]="isShowMore">ngModel双向绑定，是否显示ngIf</label>
-<p *ngIf="isShowMore" highlight>测试一下ngIf的效果</p>
+<div class="daddy">
+  <h1>
+    Hey！ {{greeting}}
+  </h1>
+  <label for=""><input type="checkbox" [(ngModel)]="isShowMore">ngModel双向绑定，是否显示ngIf</label>
+  <p *ngIf="isShowMore" highlight>测试一下ngIf的效果</p>
+  <hr>
+  <child [message]="msgToChild" (outer)="receive($event)"></child>
+  <p>来自子组件的消息: <span highlight>{{msgFromChild}}</span></p>
+</div>
