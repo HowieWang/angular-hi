@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
-    AppComponent  // 引入工作组件
+    AppComponent,  // 引入工作组件
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
