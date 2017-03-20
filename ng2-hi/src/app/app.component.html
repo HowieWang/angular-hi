@@ -1,3 +1,5 @@
 <h1>
   Hey！ {{greeting}}
 </h1>
+<label for=""><input type="checkbox" [(ngModel)]="isShowMore">ngModel双向绑定，是否显示ngIf</label>
+<p *ngIf="isShowMore">测试一下ngIf的效果</p>
